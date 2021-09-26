@@ -10,7 +10,7 @@
 # Interested in innovation ?
 
 If you are into innovation, feel free to check my companies web site.
-We are doing Design Thinking at https://tooap.com/
+We are doing [Design Thinking](https://tooap.com/)  at [Tooap](https://tooap.com/) 
 
 # Financez & développez votre projet avec un expert de la tech
 

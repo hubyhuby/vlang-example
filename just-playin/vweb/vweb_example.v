@@ -23,11 +23,17 @@ fn main() {
 	vweb.run(&App{}, port)
 }
 
-
+// PR discussion : https://github.com/vlang/v/pull/12338
 ['/users/:user']
-pub fn (mut app App) user_endpoint(user string) vweb.Result {
+pub fn (mut app App) user_endpoint(user string, txt string) vweb.Result {
 	id := rand.intn(100)
-	return app.json('{"$user": $id,"Age": "50"}')
+	//description := "some text"
+	// old return app.json('{"$user": $id,"Age": "50"}')
+	return app.json({
+		user: id,
+		"Age": 50,
+		"descr": txt,
+	})
 }
 
 pub fn (mut app App) index() vweb.Result {
